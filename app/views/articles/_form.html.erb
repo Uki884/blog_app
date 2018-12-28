@@ -1,0 +1,22 @@
+ <%= form_for @article do | f|%>
+   <div class="field">
+    <%=f.label :title, :タイトル%>
+    <div class="control">
+      <%=f.text_field :title,placeholder:"title" %>
+    </div>
+  </div>
+  <div class="field">
+    <%=f.label :body, :内容%>
+    <div class="control">
+      <%=f.text_area :body,class:"textarea",placeholder:"content" %>
+    </div>
+  </div>
+  <div class="field is-grouped">
+    <div class="control">
+      <%=f.submit "送信",class:"button is-link"%>
+    </div>
+    <div class="control">
+      <button class="button is-text">Cancel</button>
+    </div>
+  </div>
+ <% end %>
