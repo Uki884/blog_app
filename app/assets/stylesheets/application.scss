@@ -14,16 +14,30 @@
  *= require_self
  */
 @import "materialize";
-nav {
-  margin-bottom: 20px;
+
+.container{
+  padding-top:20px;
+  min-height: 960px;
 }
+.left-content{
+  float:left;
+  width:300px;
+  height:960px;
+  background-color: #2E2F30;
+}
+
+.card {
+    display: inline-block;
+    margin: 20px 20px auto;
+    width: 25%;
+    float:right;
+  }
 nav a{
   color: black;
 }
 .navbar-start{
   width: 100%;
 }
-.card {
-  margin: 30px 10px;
-  width: 30%;
+.time{
+  margin: 10px;
 }
