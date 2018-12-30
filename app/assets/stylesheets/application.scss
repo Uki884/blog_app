@@ -14,6 +14,7 @@
  *= require_self
  */
 @import "materialize";
+@import "reset";
 
 .container{
   padding-top:20px;
@@ -25,13 +26,35 @@
   height:960px;
   background-color: #2E2F30;
 }
+.right-content{
+  width: calc(100% - 300px);
+  float:right;
+  position: relative;
+}
+.pagination{
+  background : none;
+  position: absolute;
+  top: 880px;
+}
 
 .card {
-    display: inline-block;
-    margin: 20px 20px auto;
-    width: 25%;
-    float:right;
+  display: inline-block;
+  margin: 0px 20px auto;
+  width: 20%;
+  float: right;
+  min-width: 80%;
+
+  .card-content {
+    padding: 5px;
   }
+}
+body{
+
+}
+.navbar{
+  position: absolute;
+  top:0;
+}
 nav a{
   color: black;
 }
@@ -40,4 +63,7 @@ nav a{
 }
 .time{
   margin: 10px;
+}
+.current{
+  background: #3273DC;
 }
