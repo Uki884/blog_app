@@ -11,6 +11,12 @@
       <%=f.text_area :body,class:"textarea",placeholder:"content" %>
     </div>
   </div>
+   <div class="field">
+   <%= f.label :image %>
+     <div class="control">
+   <%= f.file_field :image %>
+     </div>
+   </div>
   <div class="field is-grouped">
     <div class="control">
       <%=f.submit "送信",class:"button is-link"%>
