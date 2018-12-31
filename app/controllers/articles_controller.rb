@@ -13,7 +13,8 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to root_path
     else
-      render :new
+      redirect_to new_article_path
+      flash[:danger] = "投稿できませんでした"
     end
   end
 

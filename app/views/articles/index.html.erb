@@ -5,9 +5,6 @@
     <div class="columns is-multiline is-mobile">
   <% @articles.each do | article| %>
      <div class="column is-half">
-       <p class="user__name">
-       <%= "●#{article.id}" %>
-       </p>
     <div class="card">
       <div class="card-image">
         <figure class="image is-4by3">
@@ -19,10 +16,15 @@
         </figure>
       </div>
       <header class="card-header">
+        <p class="card-header-author">
+          <%= "投稿者:#{article.id}" %>
+        </p>
         <p class="card-header-title">
           <%= article.title %>
         <p/>
-        <p class="time"><%= article.created_at.strftime("%m/%d %H:%M")%></p>
+        <p class="time">
+          <%= article.created_at.strftime("%m/%d %H:%M")%>
+        </p>
       </header>
       <footer class="card-footer">
         <%= link_to "Detail","/articles/#{article.id}", class:"card-footer-item" %>
