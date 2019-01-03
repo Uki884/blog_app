@@ -39,9 +39,8 @@ body{
   background-color: #2E2F30;
 }
 .right-content{
-  float:right;
   height: 100vh;
-  width: calc(100% - 200px);
+  width: 100%;
   position: relative;
 }
 .pagination{
@@ -49,17 +48,15 @@ body{
   width:80%;
   background : none;
   position: absolute;
-  top: 780px;
-  left:230px;
+  top: 800px;
+  left:150px;
 }
 .pagination-next a{
   color:black;
 
 }
 .card {
-  margin: 20px 20px auto;
-  float: right;
-  width: 300px;
+  margin: 10px 20px auto;
 }
 .card-header-author{
  font-size:2px;

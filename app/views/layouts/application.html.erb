@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
   <head>
     <title>BlogApp</title>
     <%= csrf_meta_tags %>
@@ -10,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
-  <body>
+<body>
   <% if flash[:danger] %>
     <p><%= flash.now[:danger] %></p>
   <% end %>

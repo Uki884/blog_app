@@ -1,6 +1,12 @@
 <div class="container">
   <div class="contents">
+    <p class="card-header-author">
+      <%= @articles.user.name %>
+    </p>
   <div class="content is-medium">
+    <%if @articles.image? %>
+<%= image_tag @articles.image.to_s%>
+    <% end %>
   <h1><%= @articles.title %></h1>
     <p><%= simple_format @articles.body %></p>
   </div>
