@@ -1,0 +1,7 @@
+<div class="left-content">
+  <% if user_signed_in? && current_user %>
+    <div class="user__name">
+  <%= current_user.name %>
+    </div>
+  <% end %>
+</div>
