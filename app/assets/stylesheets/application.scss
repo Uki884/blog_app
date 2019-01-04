@@ -48,19 +48,24 @@ body{
   width:80%;
   background : none;
   position: absolute;
-  top: 800px;
+  top: 820px;
   left:150px;
 }
 .pagination-next a{
   color:black;
-
 }
 .card {
   margin: 10px 20px auto;
+  z-index: 1;
+  position: relative;
 }
 .card-header-author{
- font-size:2px;
-  padding: 5px 0 20px 5px;
+ font-size:15px;
+  font-weight: bold;
+  z-index: 2;
+  position: absolute;
+  top:5px;
+  left:5px;
 }
 .card-header-title{
   word-break : break-all;

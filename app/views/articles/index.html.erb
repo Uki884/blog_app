@@ -6,7 +6,7 @@
      <div class="column is-4">
     <div class="card">
       <p class="card-header-author">
-        <%= "投稿者:#{article.id}" %>
+        <%= "投稿者:#{article.user.name}" %>
       </p>
       <div class="card-image">
         <figure class="image is-4by3">
@@ -34,6 +34,6 @@
      </div>
   <% end %>
     </div>
-    <%= paginate(@articles) %>
+  <%= paginate(@articles) %>
   </div>
 </div>
