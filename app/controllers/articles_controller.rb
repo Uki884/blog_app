@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
 
   def index
-    @articles = Article.page(params[:page]).per(6).order("created_at DESC")
+    @articles = Article.page(params[:page]).per(5).order("created_at DESC")
   end
 
   def new
