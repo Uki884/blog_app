@@ -15,6 +15,7 @@
  */
 @import "materialize";
 @import "reset";
+@import "users";
 
 body{
 
@@ -32,12 +33,6 @@ body{
 .contents{
   padding-top:20px;
 }
-.left-content{
-  float:left;
-  width:300px;
-  height:100vh;
-  background-color: #2E2F30;
-}
 .right-content{
   height: 100vh;
   width: 100%;
@@ -48,13 +43,13 @@ body{
   width:80%;
   background : none;
   position: absolute;
-  top: 820px;
-  left:150px;
+  bottom:0px;
 }
 .pagination-next a{
   color:black;
 }
 .card {
+  width: 500px;
   margin: 10px 20px auto;
   z-index: 1;
   position: relative;
@@ -66,6 +61,12 @@ body{
   position: absolute;
   top:5px;
   left:5px;
+}
+.delete{
+  z-index:2;
+  position: absolute !important;
+  right:0px;
+  top:0px;
 }
 .card-header-title{
   word-break : break-all;

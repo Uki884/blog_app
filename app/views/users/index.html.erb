@@ -1,0 +1,5 @@
+<div class="container">
+<% @user.each do |user|%>
+<p><%=link_to "#{user.name}","users/#{user.id}" ,class:"user__name"%></p>
+<% end %>
+</div>

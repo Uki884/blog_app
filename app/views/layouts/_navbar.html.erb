@@ -14,13 +14,14 @@
       <div class="navbar-item">
         <div class="buttons">
           <% if user_signed_in? %>
-            <strong><%= link_to "Profile", root_path,class:"button is-primary"%></strong>
-            <strong><%= link_to "Log out", destroy_user_session_path, method: :delete, class:"button is-light"%></strong>
+            <strong><%= link_to "ユーザ一覧", users_path, class:"button is-light"%></strong>
+            <strong><%= link_to "プロフィール", root_path,class:"button is-primary"%></strong>
+            <strong><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"button is-light"%></strong>
             </div>
           <% else %>
             <div class="buttons">
-            <strong><%= link_to "Sign up", new_user_registration_path, class:"button is-primary"%></strong>
-            <strong><%= link_to "Log in", new_user_session_path, class:"button is-light"%></strong>
+            <strong><%= link_to "ユーザ登録", new_user_registration_path, class:"button is-primary"%></strong>
+            <strong><%= link_to "ログイン", new_user_session_path, class:"button is-light"%></strong>
             </div>
           <% end %>
         </div>
